@@ -1,23 +1,51 @@
-/.phpunit.cache
-/node_modules
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
-/storage/pail
-/vendor
-.env
-.env.backup
-.env.production
-.phpactor.json
-.phpunit.result.cache
-Homestead.json
-Homestead.yaml
-npm-debug.log
-yarn-error.log
-/auth.json
-/.fleet
-/.idea
-/.nova
-/.vscode
-/.zed
+# Laravel Employee Dashboard With Login System
+
+A Laravel-based Employee Dashboard With Login System with user authentication and a protected employee dashboard. Built using Laravel's authentication middleware, this system allows you to manage employee data securely.
+
+---
+
+## 🚀 Features
+
+- 🔐 **Login System** with Laravel Auth Middleware
+- 👨‍💼 **Employee Dashboard** (Protected after login)
+- ➕ Add Employee
+- ✏️ Edit Employee
+- 🗑️ Delete Employee
+- 📄 View Employee Details
+- 📸 Upload Profile Image for Employee
+- 🚪 Secure Logout
+
+---
+
+## 🛠️ Tech Stack
+
+- Laravel (PHP Framework)
+- Blade Templates
+- Bootstrap 5 (for UI)
+- MySQL (or any DB)
+- Auth Middleware
+
+---
+
+## 🧪 Installation Steps
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/laravel-employee-dashboard.git
+
+cd laravel-employee-dashboard
+
+# Install dependencies
+composer install
+
+# Copy .env file and configure DB
+cp .env.example .env
+
+# Generate key
+php artisan key:generate
+
+# Run migrations
+php artisan migrate
+
+# Serve the project
+php artisan serve
